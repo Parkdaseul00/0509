@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home main</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		ul,
+		ol,
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #666;
+			cursor: pointer;
+		}
+
+		.p1 {
+			font-family: Nunito;
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		#s_btnbox>button:hover {
+			padding: 15px 30px;
+			border: 0;
+			background-color: black;
+			color: #eee;
+			margin: 20px 0 0 0px;
+			border-radius: 20px;
+			font-size: 13px;
+		}
+
+		#team_text:hover {
+			opacity: 0.9;
+		}
+
+
+
+		#wrap {
+			width: 100%;
+			height: 10000px
+			background-color: green;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		/*header*/
+
+		header {
+			width: 100%;
+			height: 80px;
+			background-color: yellow;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.nav {
+			width: 350px;
+			height: 35px;
+			background-color: red;
+		}
+
+		.nav>ul>li {
+			float: left;
+			margin: 8px;
+			font-size: 12px;
+		}
+
+		.nav>ul>li>a>img {
+			width: 10px;
+			height: 10px;
+			margin: 0 0 0 5px;
+		}
+
+		#p_s {
+			display: none;
+
+		}
+
+
+		.f_logo {
+			width: 210px;
+			height: 45px;
+			background-color: greenyellow;
+		}
+
+		.sns {
+			width: 400px;
+			height: 35px;
+			background-color: skyblue;
+		}
+
+		.sns>ul>li {
+			float: left;
+			margin: 8px;
+			font-size: 12px;
+		}
+
+		.sns>ul>li>a>img {
+			width: 13px;
+			height: 10px;
+			margin: 0 5px 0 0px;
+			text-align: center;
+		}
+
+
+
+		/*slider*/
+
+		#slider {
+			width: 100%;
+			height: 860px;
+			background-image: url(img/1.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.s_textbox {
+			text-align: center;
+			padding: 180px 0 0 0px;
+			color: #eee;
+		}
+
+		.s_textbox>span {
+			font-size: 125px;
+			font-family: Arial Black;
+			margin: 0;
+		}
+
+		.s_textbox>p {
+			margin: 35px;
+		}
+
+		.s_textbox>p>a {
+			text-decoration: none;
+			background-color: #a4b180;
+			color: #eee;
+			padding: 10px 35px;
+			border-radius: 20px;
+			font-size: 13px;
+		}
+
+		.s_textbox>h5 {
+			font-size: 20px;
+			font-family: Nunito;
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		/*artcle*/
+
+		article {
+			width: 100%;
+			height: 465px;
+			background-color: violet;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.a_textbox {
+			width: 750px;
+			height: 200px;
+			background-color: orange;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			color: black;
+		}
+
+		.a_textbox>h6 {
+			font-size: 13px;
+		}
+
+		.a_textbox>p {
+			font-size: 20px;
+		}
+
+		.a_textbox>h5 {
+			color: #666;
+			font-family: Nunito;
+			font-weight: 300;
+			font-style: normal;
+		}
+
+
+		/*services*/
+
+		#services {
+			width: 100%;
+			height: 860px;
+			background-color: grey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+
+		#services>h1 {
+			width: 100%;
+			background-color: rebeccapurple;
+			font-size: 50px;
+			color: #000000;
+			text-align: center;
+		}
+
+
+		#services>h6 {
+			width: 100%;
+			background-color: cyan;
+			letter-spacing: 3px;
+		}
+
+
+		.s_imgbox {
+			width: 80%;
+			height: 500px;
+			background-color: yellowgreen;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: center;
+			margin: 10px;
+		}
+
+
+		.s_img {
+			width: 30%;
+			height: 390px;
+			background-color: green;
+			margin: 10px;
+
+		}
+
+
+		.s_img>img {
+			width: 100%;
+			height: 50%;
+		}
+
+
+		.s_img>h4 {
+			font-size: 30px;
+			margin: 20px 0 5px 0px;
+		}
+
+
+		.s_img>h3 {
+			font-size: 15px;
+			margin: 15px 0 0 0px;
+		}
+
+		.s_img>p {
+			padding: 10px;
+		}
+
+
+
+		#s_btnbox {
+			width: 400px;
+			height: 150px;
+			background-color: blueviolet;
+			padding: 20px;
+		}
+
+		#s_btnbox>button {
+			padding: 15px 30px;
+			border: 0;
+			background-color: beige;
+			margin: 20px 0 0 0px;
+			border-radius: 20px;
+			font-size: 13px;
+		}
+
+
+
+		/*gallery*/
+
+		#gallery {
+			width: 100%;
+			height: 1400px;
+			background-color: whitesmoke;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			flex-direction: column;
+
+		}
+
+		#gallery>h1 {
+			width: 100%;
+			font-size: 50px;
+			background-color: skyblue;
+			margin: 0px 0 50px 0px;
+		}
+
+		#gallery>h6 {
+			width: 100%;
+			background-color: pink;
+			letter-spacing: 3px;
+		}
+
+		#gallery_menu {
+			width: 100%;
+			background-color: blue;
+		}
+
+		#gallery_menu>ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 13px;
+		}
+
+		#gallery_menu>ul>li {
+			float: left;
+			margin: 0px 10px;
+		}
+
+
+		.g_imgbox {
+			width: 100%px;
+			height: 880px;
+			background-color: aqua;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+
+		#g_img {
+			width: 32%;
+			height: 420px;
+			background-color: red;
+			margin: 10px;
+		}
+
+		#g_img>a>img {
+			width: 100%;
+			height: 100%;
+
+		}
+
+
+		.gallery_tip {
+			width: 100%;
+			height: 290px;
+			background-color: royalblue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.g_tipbox {
+			width: 25%;
+			height: 50%;
+			background-color: khaki;
+			margin: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.g_tipbox>img {
+			width: 20%;
+			height: 80px;
+			margin: 10px 0 0 0px;
+		}
+
+
+		#gtip_text {
+			width: 80%;
+			height: 140px;
+			background-color: green;
+			padding: 10px;
+		}
+
+
+		#gtip_text>h3 {
+			margin: 10px;
+			font-size: 13px;
+		}
+
+		#gtip_text>.p1 {
+			font-size: 14px;
+		}
+
+
+
+		/*team*/
+
+		#team {
+			width: 100%;
+			height: 815px;
+			background-color: tomato;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#team>h1 {
+			width: 100%;
+			background-color: beige;
+			font-size: 50px;
+			margin: 0 0 80px 0px;
+		}
+
+
+		#team>h6 {
+			width: 100%;
+			background-color: pink;
+			letter-spacing: 3px;
+		}
+
+		.t_imgbox {
+			width: 80%;
+			height: 380px;
+			background-color: red;
+			display: flex;
+
+		}
+
+		.t_img {
+			width: 33%;
+			height: 360px;
+			background-color: deepskyblue;
+			margin: 10px;
+		}
+
+		.t_img>img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#team_text {
+			width: 95%;
+			height: 340px;
+			background-color: white;
+			position: relative;
+			left: 10px;
+			bottom: 355px;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			display: none;
+		}
+
+		#team_text>h2,
+		h4 {
+			margin: 10px;
+		}
+
+		#team_text>p {
+			font-size: 14px;
+		}
+
+
+		#tt_icon {
+			width: 100px;
+			height: 20px;
+			background-color: red;
+			margin: 10px;
+		}
+
+		#tt_icon>img {
+			width: 15px;
+			height: 15px;
+		}
+
+
+
+		/*title*/
+
+		#title {
+			width: 100%;
+			height: 600px;
+			background-color: yellow;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.title_tbox {
+			width: 85%;
+			height: 400px;
+			background-color: black;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#t_textbox {
+			width: 24%;
+			height: 370px;
+			background-color: burlywood;
+			margin: 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#t_textbox>h1 {
+			margin: 10px;
+			font-size: 77px;
+		}
+
+
+		#t_textbox>h5,
+		p {
+			margin: 10px;
+		}
+
+
+
+		/*review*/
+
+		#review {
+			width: 100%;
+			height: 550px;
+			background-image: url(img/3.jpg);
+			background-size: cover;
+			background-position: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#review>h1 {
+			width: 100%;
+			font-size: 50px;
+			background-color: cyan;
+		}
+
+		#review>h6 {
+			width: 100%;
+			letter-spacing: 3px;
+			background-color: blue;
+		}
+
+		.r_textbox {
+			width: 35%;
+			height: 200px;
+			margin: 20px;
+			background-color: darkslateblue;
+			color: #eee;
+		}
+
+		.r_textbox>.p1 {
+			font-size: 20px;
+			padding: 5px;
+			margin: 20px;
+		}
+
+
+		/*social*/
+
+		#social {
+			width: 100%;
+			height: 600px;
+			background-color: beige;
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		
+		#social > h1 {
+			width: 100%;
+			background-color:purple;
+			margin:0px 0 40px 0px;
+		}
+
+		#social > h6 {
+			width: 100%;
+			background-color:tomato;
+		}
+
+
+
+		#social_snsiconbox {
+			width:80%;
+			height:300px;
+			background-color:gold;
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.s_snsicon {
+			width:20%; 
+			height:250px;
+			background-color:green;
+			margin:5px;
+			display: flex;
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.s_snsicon > img {
+			width:100px;
+			height:100px;
+		}
+
+
+		/*sign_up*/
+
+		#signup {
+			width: 100%;
+			height:630px;
+			background-color: blueviolet;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		.abox {
+			width:40%;
+			height:610px;
+			background-color: pink;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+
+		#address {
+			width:100%;
+			height:600px;
+			background-color: gold;
+		}
+
+		#address > h1{
+			font-size: 60px;
+			margin:10px;
+			padding:10px;
+		}
+
+
+		#pick_address {
+			width:98%;
+			height:150px;
+			background-color: green;
+			margin:5px;
+			display: flex;
+		}
+
+		#pickicon {
+			width:40%;
+			height: 150px;
+			background-color: antiquewhite;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#pickicon > img {
+			width:100px;
+			height:100px;
+		}
+
+
+		#address_textbox {
+			width:60%;
+			height:100%;
+			background-color: rosybrown;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction:column;
+		}
+
+
+		.messagebox {
+			width:60%;
+			height:610px;
+			background-color:red;
+		}
+
+
+		.position {
+			width: 370px;
+			height: 360px;
+			background-color: green;
+		}
+
+		.message {
+			width: 780px;
+			height: 360px;
+			background-color: red;
+		}
+
+		/*sns*/
+
+		#sns {
+			width: 100%;
+			height: 200px;
+			background-color: rebeccapurple;
+		}
+
+		/*footer*/
+
+		footer {
+			width: 100%;
+			height: 650px;
+			background-color: tomato;
+		}
+
+		.address {
+			width: 540px;
+			height: 130px;
+			background-color: gray;
+		}
+
+		.e_logo {
+			width: 275px;
+			height: 170px;
+			background-color: whitesmoke;
+		}
+
+	</style>
+</head>
+
+
+
+
+<body>
+
+	<div id="wrap">
+
+
+		<!--header/nav-->
+
+		<header>
+			<div class="nav">
+				<ul>
+					<li><a href="#">HOME<img src="img/v.png" alt="화살표"></a></li>
+
+					<li>
+						<a href="#">PAGES<img src="img/v.png" alt="화살표"></a>
+						<ul id="p_s">
+							<li><a href="#">Team1</a></li>
+							<li><a href="#">Team2</a></li>
+							<li><a href="#">Princing</a></li>
+							<li><a href="#">Branding</a></li>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">PORTFPLIO<img src="img/v.png" alt="화살표"></a></li>
+					<li><a href="#">SHOP<img src="img/v.png" alt="화살표"></a></li>
+					<li><a href="#">BLOG<img src="img/v.png" alt="화살표"></a></li>
+
+				</ul>
+			</div>
+
+			<!--logo-->
+			<div class="f_logo">
+				<img src="img/logo.png" alt="로고1">
+			</div>
+
+			<!--sns-->
+			<div class="sns">
+				<ul>
+					<li><a href="#"><img src="img/fe.png" alt="페이스북로고">| FACEBOOK</a></li>
+					<li><a href="#"><img src="img/tw.png" alt="트위터로고">| TWITTER</a></li>
+					<li><a href="#"><img src="img/in.png" alt="인스타로고">| INSRAGRAM</a></li>
+					<li><a href="#"><img src="img/vi.png" alt="vimeo로고">| VIMEO</a></li>
+				</ul>
+			</div>
+
+		</header>
+
+		<!--slider-->
+
+		<div id="slider">
+
+			<div class="s_textbox">
+
+				<h6>GREETINGS, WE ARE</h6>
+				<span>FORESTER</span>
+				<h5>
+					Unordinary digital agency crafting sophisticated and<br>
+					eccentric stuff that will leave you speechless.
+				</h5>
+				<p><a href="">EXPLORE NOW</a></p>
+
+			</div>
+
+
+		</div>
+
+		<!--article-->
+
+		<article>
+			<div class="a_textbox">
+
+				<h6>out story</h6>
+
+				<p class="p1">
+					Unordinary digital agency crafting sophisticated and eccentric stuff that will leave you speechless,
+					we had opportunity to work on wide variety of projects for different clients around the world,
+					we're responsible and our client is our priority
+				</p>
+
+				<h5>
+					Interested in our story and want to meet us even better?
+					<a href="#"><ins>Read More</ins></a>
+				</h5>
+
+			</div>
+		</article>
+
+
+		<!--services-->
+
+		<section id="services">
+			<h6>OUR EXPERTISE</h6>
+			<h1>Services</h1>
+
+			<div class="s_imgbox">
+				<div class="s_img">
+					<img src="img/2.jpg" alt="산이미지">
+					<h4>Web Design</h4>
+					<p class="p1">
+						Crafting visually stunning designs that will leave you speechless<br>
+					</p>
+					<h3><a href="#">READ MORE</a></h3>
+
+				</div>
+
+
+				<div class="s_img">
+					<img src="img/2.jpg" alt="산이미지">
+					<h4>Web Design</h4>
+					<p class="p1">
+						Crafting visually stunning designs that will leave you speechless<br>
+					</p>
+					<h3><a href="#">READ MORE</a></h3>
+
+				</div>
+
+
+				<div class="s_img">
+					<img src="img/2.jpg" alt="산이미지">
+					<h4>Marketing</h4>
+					<p class="p1">
+						We'll advertise your product using latest and unique fresh marketing methods.<br>
+					</p>
+					<h3><a href="#">READ MORE</a></h3>
+				</div>
+			</div>
+
+			<div id="s_btnbox">
+				<p class="p1">Top quality services executed by our devoted, yet<br>
+					creative team. Nothing less than creative.</p>
+
+				<button><a href="#"><b>LET'S GET IN TOUCH</b></a></button>
+			</div>
+		</section>
+
+		<!--gallery-->
+
+		<div id="gallery">
+
+			<h6>OUR PORTFOLIO</h6>
+			<h1>Gallery</h1>
+
+
+			<div id="gallery_menu">
+				<ul>
+					<li><a href="#">ALL</a></li>
+					<li><a href="#">BRANDING</a></li>
+					<li><a href="#">DIGITAL</a></li>
+					<li><a href="#">PRINT</a></li>
+				</ul>
+			</div>
+
+			<div class="g_imgbox">
+				<div id="g_img"><a href="#"><img src="img/g1.jpg" alt="이미지1"></a></div>
+				<div id="g_img"><a href="#"><img src="img/g2.jpg" alt="이미지2"></a></div>
+				<div id="g_img"><a href="#"><img src="img/g3.jpg" alt="이미지3"></a></div>
+				<div id="g_img"><a href="#"><img src="img/g4.jpg" alt="이미지4"></a></div>
+				<div id="g_img"><a href="#"><img src="img/g5.jpg" alt="이미지5"></a></div>
+				<div id="g_img"><a href="#"><img src="img/g6.jpg" alt="이미지6"></a></div>
+			</div>
+
+
+			<div class="gallery_tip">
+				<div class="g_tipbox">
+					<img src="img/gt1.png" alt="전구아이콘이미지">
+					<div id="gtip_text">
+						<h3>WE'RE CREATIVE</h3>
+						<p class="p1">
+							Day handsome addition horrible sensible goodness two contempt. Evening for married summies
+							imperia
+						</p>
+					</div>
+
+				</div>
+
+				<div class="g_tipbox">
+					<img src="img/gt2.png" alt="넥타이아이콘이미지">
+					<div id="gtip_text">
+						<h3>WE'RE CREATIVE</h3>
+						<p class="p1">
+							Day handsome addition horrible sensible goodness two contempt. Evening for married summies
+							imperia
+						</p>
+					</div>
+				</div>
+
+				<div class="g_tipbox">
+					<img src="img/gt3.png" alt="메달아이콘이미지">
+					<div id="gtip_text">
+						<h3>WE'RE CREATIVE</h3>
+						<p class="p1">
+							Day handsome addition horrible sensible goodness two contempt. Evening for married summies
+							imperia
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--team crew-->
+
+		<div id="team">
+			<h6>THE CREW</h6>
+			<h1>Team</h1>
+			<div class="t_imgbox">
+				<div class="t_img"><img src="img/t1.jpg" alt="팀원사진1">
+					<div id="team_text">
+						<h2>Mike Rose</h2>
+						<h4>DESIGNER</h4>
+						<p class="p1">Your team is important and we know it. With this element you can highlight the
+							crew.</p>
+						<div id="tt_icon">
+							<img src="img/t01.png" alt="snsicon">
+							<img src="img/t02.png" alt="snsicon">
+							<img src="img/t03.png" alt="snsicon">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="t_img"><img src="img/t2.jpg" alt="팀원사진2">
+					<div id="team_text">
+						<h2>Guy Honsi</h2>
+						<h4>DESIGNER</h4>
+						<p class="p1">Your team is important and we know it. With this element you can highlight the
+							crew.</p>
+						<div id="tt_icon">
+							<img src="img/t01.png" alt="snsicon">
+							<img src="img/t02.png" alt="snsicon">
+							<img src="img/t04.png" alt="snsicon">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="t_img"><img src="img/t3.jpg" alt="팀원사진3">
+					<div id="team_text">
+						<h2>Luke Sky</h2>
+						<h4>DESIGNER</h4>
+						<p class="p1">Your team is important and we know it. With this element you can highlight the
+							crew.</p>
+						<div id="tt_icon">
+							<img src="img/t02.png" alt="snsicon">
+							<img src="img/t03.png" alt="snsicon">
+							<img src="img/t04.png" alt="snsicon">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="title">
+			<div class="title_tbox">
+				<div id="t_textbox">
+					<h1>696</h1>
+					<h5>PROJECTS COMPLETED</h5>
+					<p>
+						We had a dpportunity to work on wide variety of projects for different clients around the world
+					</p>
+				</div>
+				<div id="t_textbox">
+					<h1>280</h1>
+					<h5>SATISFIED CLIENTS</h5>
+					<p>
+						We had a dpportunity to work on wide variety of projects for different clients around the world
+					</p>
+				</div>
+				<div id="t_textbox">
+					<h1>14</h1>
+					<h5>AWARDS</h5>
+					<p>
+						We had a dpportunity to work on wide variety of projects for different clients around the world
+					</p>
+				</div>
+				<div id="t_textbox">
+					<h1>77</h1>
+					<h5>EMPLOYEES</h5>
+					<p>
+						We had a dpportunity to work on wide variety of projects for different clients around the world
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="review">
+			<h6>TESTIMONIALS</h6>
+			<h1>Reviews</h1>
+
+			<div class="r_textbox">
+				<p class="p1">
+					The team at LeoneDesign done a really great job helping me to customize and implement new features
+					on my page,
+					thank you LeoneDesign!
+				</p>
+				<p>Sophie Robben</p>
+			</div>
+
+
+		</div>
+
+
+		<div id="social">
+			<h6>READY TO COLLABORATE?</h6>
+			<h1>Social</h1>
+			
+			<div id="social_snsiconbox">
+				<div class="s_snsicon">
+					<img src="img/soicon1.png" alt="인스타그램아이콘">
+					<p>INSTAGRAM</p>
+				</div>
+
+				<div class="s_snsicon">
+					<img src="img/soicon2.png" alt="페이스북아이콘">
+					<p>FACEBOOK</p>
+				</div>
+
+				<div class="s_snsicon">
+					<img src="img/soicon3.png" alt="트위터아이콘">
+					<p>TWITTER</p>
+				</div>
+
+				<div class="s_snsicon">
+					<img src="img/soicon4.png" alt="비메오아이콘">
+					<p>VIMEO</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="signup">
+			<div class="abox">
+				<div id="address">
+					
+					<h1>Get In Touch</h1>
+					
+					<div id="pick_address">
+						<div id="pickicon">
+							<img src="img/a1.png" alt="주소아이콘">
+						</div>
+						
+					    <div id="address_textbox">
+						    <h6>OUR OFFICE</h6>
+						    <p>3 Byron Ave, Yonkers NY</p>
+						</div>
+					</div>
+
+					<div id="pick_address">
+						<div id="pickicon">
+							<img src="img/a2.png" alt="메일아이콘">
+						</div>
+					
+					    <div id="address_textbox">
+						    <h6>EMAIL ADDRESS</h6>
+						    <p>support@forester.com</p>
+						</div>
+					</div>
+					
+					<div id="pick_address">
+						<div id="pickicon">
+							<img src="img/a3.png" alt="전화아이콘">
+						</div>
+						
+					    <div id="address_textbox">
+						    <h6>GIVE US A CALL</h6>
+						    <p>(633) 926-316</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		   <div class="messagebox"></div>	
+		
+
+		<div id="sns"></div>
+
+
+		<footer>
+			<div class="position"></div>
+			<div class="e_logo"></div>
+		</footer>
+
+
+	</div>
+
+</body>
+
+</html>
